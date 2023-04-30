@@ -20,7 +20,9 @@ const Login = () => {
 
     //prev location
     const location = useLocation();
-    const from = location.state?.from?.pathName  || '/';
+    const from = location.state?.from?.pathname  || '/';
+
+ 
 
 
     const [load,setLoad] = useState(false);
@@ -86,6 +88,7 @@ const Login = () => {
         .then(result=>{
           
             toast.success('User Created successfully');
+            navigate(from,{replace:true});
     
     
           

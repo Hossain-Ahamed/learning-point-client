@@ -4,7 +4,7 @@ import Home from "../../pages/Home/Home";
 import ErrorPage from "../../pages/Shared/ErrorPage/ErrorPage";
 import Profile from "../../pages/UserHandle/Profile/Profile";
 import FAQ from "../../pages/Others/FAQ/FAQ";
-import Blog from "../../pages/Blog/Blog";
+import Blog,{loader as blogLoader} from "../../pages/Blog/Blog";
 import Courses, {loader as courseLoader } from "../../pages/coursePages/Courses/Courses";
 import Course, { loader as individualCourseLoader } from "../../pages/coursePages/Course/Course";
 import Register from "../../pages/UserHandle/Register/Register";
@@ -58,7 +58,8 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/blog',
-                element:<Blog/>
+                element:<Blog/>,
+                loader :blogLoader
             },
             {
                 path:'/faq',

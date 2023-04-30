@@ -8,6 +8,7 @@ import LoadingPage from '../../pages/Shared/LoadingPage/LoadingPage';
 const PrivateRoute = ({children}) => {
 
     const location = useLocation();
+    
 
     const {user,loading} = useContext(AuthContext);
 

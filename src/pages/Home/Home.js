@@ -1,9 +1,14 @@
 import React from 'react';
+import Carousel from '../Others/Carousel/Carousel';
+import './Home.css'
 
 const Home = () => {
     return (
-        <div>
-            <h2>this is home</h2>
+        <div className=" flex justify-center">
+         
+                <Carousel />
+           
+
         </div>
     );
 };
